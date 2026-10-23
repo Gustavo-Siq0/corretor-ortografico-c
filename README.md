@@ -34,7 +34,7 @@ Trabalho da disciplina de **Programação Estruturada e Estrutura de Dados**.
 
 ## Equipe
 
-- Alysson Teofilo
+- Allyson Teófalo Silva Lemos
 - Carlos Manoel Batista dos Santos
 - Ezequiel Alves da Silva
 - Francisco Henrique Oliveira Bezerra

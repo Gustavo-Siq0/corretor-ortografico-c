@@ -1,4 +1,5 @@
-#include <stdio.h>
+#ifndef DICIONARIO_H
+#define DICIONARIO_H
 
 typedef struct {
     char palavra[50];
@@ -11,11 +12,7 @@ typedef struct {
     int distancia;
 } Resultado;
 
-int main() {
+// Preenche o vetor com as palavras e retorna quantas foram carregadas
+int carregarDicionario(Palavra *dic);
 
-    printf("Try clicking the Run button.");
-
-
-    
-    return 0;
-}
+#endif
