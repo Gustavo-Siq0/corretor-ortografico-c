@@ -212,6 +212,10 @@ int main() {
 
     char entrada[50];
 
+    printf("========================================\n");
+    printf("         CORRETOR ORTOGRAFICO\n");
+    printf("========================================\n\n");
+
     // Repete a pergunta ate o usuario digitar alguma coisa
     do {
         printf("Digite uma palavra: ");
@@ -225,6 +229,8 @@ int main() {
         }
     } while (strlen(entrada) == 0);
 
+    printf("Processando...\n\n");
+
     paraMinusculas(entrada);
 
     Resultado resultados[100];
@@ -235,7 +241,15 @@ int main() {
     int mostrar = 5;
     if (qtd < mostrar) mostrar = qtd;
 
+    printf("As %d palavras mais semelhantes:\n", mostrar);
+    printf("--------------------------------------------------\n");
+    printf("%-12s %-10s %s\n", "Palavra", "Distancia", "Significado");
+    printf("--------------------------------------------------\n");
     for (int i = 0; i < mostrar; i++) {
-        printf("%s - distancia %d\n", resultados[i].palavra, resultados[i].distancia);
+        printf("%-12s %-10d %s\n", resultados[i].palavra,
+               resultados[i].distancia, resultados[i].significado);
     }
+    printf("--------------------------------------------------\n");
+
+    return 0;
 }
