@@ -109,7 +109,7 @@ int carregarDicionario(Palavra *dic) {
     strcpy(dic[43].palavra, "pedra");
     strcpy(dic[43].significado, "Fragmento duro de rocha.");
     strcpy(dic[44].palavra, "verde");
-    strcpy(dic[44].significado, "Cor resultante da combinação do amarelo com o azul.");
+    strcpy(dic[44].significado, "Cor resultante da combinacao do amarelo com o azul.");
     strcpy(dic[45].palavra, "vento");
     strcpy(dic[45].significado, "Ar em movimento.");
     strcpy(dic[46].palavra, "tempo");
